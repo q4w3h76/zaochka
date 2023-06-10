@@ -1,8 +1,31 @@
+/* подключение шрифтов */
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('../fonts/Rubik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
 /* сброс стилей браузера */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Rubik';
 }
 
 ul {
@@ -35,6 +58,7 @@ h2 {
     color: #fff;
     font-size: 64px;
     text-align: right;
+    font-weight: bold;
 }
 
 /* стиль основных блоков сайта */
@@ -77,6 +101,7 @@ h2 {
     margin-bottom: 40px;
     font-size: 40px;
     text-align: left;
+    font-weight: bold;
 }
 
 .description-list {
@@ -86,11 +111,13 @@ h2 {
 .description__item h3 {
     color: #6068ff;
     font-size: 30px;
+    font-weight: 500;
 }
 
 .description__item p {
     color: #6068ff;
     font-size: 24px;
+    font-weight: 300;
 }
 
 .product-right {
@@ -103,11 +130,13 @@ h2 {
 .product-right h1 {
     color: #fff;
     font-size: 90px;
+    font-weight: bold;
 }
 
 .product-right p {
     color: #fff;
     font-size: 43px;
+    font-weight: 500;
 }
 
 .product__button {
@@ -116,6 +145,7 @@ h2 {
     padding: 20px 60px;
     font-size: 48px;
     transition: 0.8s;
+    font-weight: 500;
 }
 
 .product__button:hover {
@@ -133,6 +163,7 @@ h2 {
     font-size: 48px;
     padding: 20px 35%;
     transition: 0.8s;
+    font-weight: 500;
 }
 
 .button_prev:hover {
@@ -174,10 +205,12 @@ h2 {
 
 .catalog__title {
     font-size: 30px;
+    font-weight: bold;
 }
 
 .catalog__price {
     font-size: 30px;
+    font-weight: 500;
 }
 
 .catalog__button {
@@ -213,6 +246,7 @@ h2 {
 .menu__link {
     color: #fff;
     font-size: 42px;
+    font-weight: 500;
 }
 
 .menu__link:hover {
@@ -231,6 +265,7 @@ h2 {
 
 .sign-in_container h2 {
     color: #fff;
+    font-weight: bold;
 }
 
 .sign-in {
@@ -244,10 +279,11 @@ h2 {
 
 .sign-in label {
     font-size: 30px;
+    font-weight: 500;
 }
 
 .sign-in input[type='text'] {
-    padding: 2px;
+    padding: 5px;
 }
 
 .sign-in input[type='submit'] {
@@ -260,7 +296,7 @@ h2 {
 
 .sign-in input[type='submit']:hover {
     transition: 0.8s;
-    opacity: 0.8;
+    opacity: 0.5;
     cursor: pointer;
 }
 
@@ -281,7 +317,6 @@ h2 {
     text-align: right;
     display: grid;
     align-content: space-between;
-
 }
 
 .second-menu_item {
@@ -290,6 +325,7 @@ h2 {
     gap: 10px;
     align-items: flex-end;
 }
+
 /* стиль подменю */
 .submenu {
     display: flex;
@@ -299,6 +335,7 @@ h2 {
 .submenu__link {
     color: #fff;
     font-size: 36px;
+    font-weight: 300;
 }
 
 .submenu__link:hover {
@@ -331,6 +368,7 @@ h2 {
     text-align: center;
     font-size: 100px;
     color: #fff;
+    font-weight: bold;
 }
 
 /* стиль главного блока сайта */
@@ -352,10 +390,12 @@ h2 {
 .main-about h2 {
     font-size: 48px;
     margin-bottom: 40px;
+    font-weight: bold;
 }
 
 .main-about p {
     font-size: 24px;
+    font-weight: 500;
 }
 
 /* стиль раздела преимуществ */
@@ -369,6 +409,7 @@ h2 {
     margin-bottom: 60px;
     color: #fff;
     text-align: center;
+    font-weight: bold;
 }
 
 .privilege-list {
@@ -379,26 +420,29 @@ h2 {
 .privilege-list__item {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
     background-color: #fff;
     padding: 15px;
-    height: 250px;
+    height: 260px;
 }
 
 .privilege-list__title {
     display: flex;
     align-items: center;
     gap: 15px;
+    font-weight: bold;
 }
 
 .privilege-list__item h3 {
     color: #6068ff;
     font-size: 48px;
+    font-weight: bold;
 }
 
 .privilege-list__item p {
     color: #6068ff;
     font-size: 26px;
+    font-weight: 500;
 }
 
 /* стиль подвала сайта */
@@ -412,4 +456,5 @@ h2 {
 .footer__text {
     color: #fff;
     font-size: 36px;
+    font-weight: 300;
 }
